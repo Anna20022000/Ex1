@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Anna - Thương hiệu đồ bơi nữ</title>
+    <link rel="stylesheet" href="../../Css/anna.css">
+    <!-- use icons font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!-- khai báo meta viewport (responsive) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <!-- header chứa logo, mô tả -->
+    @*@Html.Partial("TopMenu");*@
+    @{Html.RenderPartial("TopMenu");}
+
+    <!-- ----------------SEARCH------------------- -->
+    <div class="search hide_1024" style="margin-bottom: 1em;">
+        <div class="align">
+            <select name="choose">
+                <option value="all">Tất cả</option>
+                <option value="online">One Piece</option>
+                <option value="touch">Two Pieces</option>
+                <option value="broker">Cover-Up</option>
+                <option value="other">Bandeau</option>
+            </select>
+            <input type="search" placeholder="Tìm kiếm mẫu đồ bơi yêu thích">
+            <p><a href="#">TÌM KIẾM</a></p>
+        </div>
+    </div>
+
+    @RenderBody()
+
+    <!-- ----------------------------------footer--------------- -->
+    <footer>
+        <div class="foter">
+            <div><a href="#"><img src="../../imgs/F_logo.png" alt="logo" class="logo"></a></div>
+            <div class="lien_he">
+                <p class="thongtin">Thông tin liên hệ</p>
+                <ul>
+                    <li>
+                        <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Nhân Hòa, Mỹ Hào, Hưng Yên</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-phone"></i> Số điện thoại: (+84) 989 601 134</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-envelope"></i> Email: kimYen25032000@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="ket_noi">
+                <p class="thongtin">Kết nối với chúng tôi</p>
+                <a href="#"><i class="fab fa-facebook-f" style="color:#2980b9;"></i></a>
+                <a href="#"><i class="fab fa-instagram" style="color: #9b59b6;"></i></a>
+                <a href="#"><i class="fab fa-youtube" style="color: red;"></i></a>
+                <a href="#"><i class="fab fa-facebook-messenger" style="color: #3498db;"></i></a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="time">
+            <p>Thời gian mở cửa: Thứ 2 đến chủ nhật từ 8h đến 22h (trừ ngày lễ, ngày Tết).</p>
+            <p>Coppyrights <i class="far fa-copyright" style="color:white;"></i> 2020 by Anna. Powered by Chu Yen</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="styles/js/anna.js"></script>
+</body>
+</html>
